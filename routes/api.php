@@ -11,5 +11,4 @@ Route::get('/user', function (Request $request) {
 Route::prefix('/leaderboard')->group(function () {
     Route::get('/', [LeaderboardController::class, 'index']);            
     Route::get('/search', [LeaderboardController::class, 'search']);     
-    Route::post('/recalculate', [LeaderboardController::class, 'recalculate']); 
 });
